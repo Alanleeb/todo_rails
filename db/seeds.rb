@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+20.times do
+  List.create(
+    item: Faker::Food.dish,
+    nutrition: Faker::Number.number(3) + 'cals',
+    description: Faker::Lorem.sentence
+  )
+end

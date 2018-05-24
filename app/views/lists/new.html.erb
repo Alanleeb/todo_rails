@@ -1,0 +1,13 @@
+<h1>New Page</h1>
+  <%= form_for @list do |f| %>
+  <%= f.label :item %>
+  <%= f.text_area :item %>
+
+  <%= f.label :nutrition %>
+  <%= f.text_area :nutrition %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.submit %>
+<% end %>
