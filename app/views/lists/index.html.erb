@@ -1,7 +1,9 @@
 <h1>Grocery List</h1>
-<p><%= link_to 'New Item', new_list_path %></p>
-
+<h2><%= link_to 'New Item', new_list_path %></h2>
 <%  @lists.each do |list| %>
-<h2><%= list.item %>  <%= link_to 'Show Info' , list_path(list) %></h2>
+<br />
+<%= list.item %> <%= link_to 'Show Info' , list_path(list) %>
+<%= link_to 'Remove', list, method: :delete %>
+
 
 <% end %>
